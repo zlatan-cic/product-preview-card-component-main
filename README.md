@@ -18,8 +18,8 @@ Users should be able to:
 ## Mobile phone
 ![Desktop](./images/Frontend-Mentor-Product-preview-card-component-mobile.png)
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [here](https://www.frontendmentor.io/solutions/html-and-css-P85K7tI93u)
+- Live Site URL: [Here](https://zlatan-cic.github.io/product-preview-card-component-main/)
 
 ## My process
 

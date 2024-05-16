@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* Fonts */
+  --montserrat: "Montserrat", sans-serif;
+  --fraunces: "Fraunces", serif;
+
+  /* Colors -----START-----*/
+  /* Primary */
+  --primary-clay: hsl(158, 36%, 37%);
+  --primary-cream: hsl(30, 38%, 92%);
+  /* Neutral */
+  --dark-blue: hsl(212, 21%, 14%);
+  --dark-gray-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  /* Colors -----END-----*/
+}
+
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--montserrat);
+  /*  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--primary-cream);
+}
+
+main.container {
+  flex: 1; /**/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 360px; Maximum width for mobile devices */
+  width: 100%; /* This will ensure it takes full width available */
+}
+
+.wrapper {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  /* Maximum width for mobile devices */
+  max-width: 360px;
+  margin: 10px;
+  /* gap: 20px; */
+  border-radius: 15px;
+}
+.container .img-container {
+  width: 100%;
+  /* padding-top: 70%; */
+  height: 250px;
+  background-image: url("../images/image-product-mobile.jpg");
+  overflow: hidden;
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the background image */
+}
+
+.img-container {
+  width: 100%;
+  background-image: url("../images/image-product-mobile.jpg");
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.wrapper .intro {
+  /* background-color: aqua; */
+  padding: 30px;
+}
+
+.intro .type {
+  letter-spacing: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--dark-gray-blue);
+  margin-bottom: .5rem;
+  opacity: .7;
+  font-weight: 600;
+}
+
+.intro .name-product {
+  font-family: var(--fraunces);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.intro .content-product {
+  line-height: 1.5;
+  color: var(--dark-gray-blue);
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.intro .price-container {
+  display: flex;
+  gap: 1rem;
+  /* justify-content: start; */
+  align-items: center;
+  margin-bottom: 1rem;
+ 
+
+}
+
+.price-container .price-one {
+  font-size: 2.2rem;
+  font-family: var(--fraunces);
+  font-weight: bold;
+  color: var(--primary-clay);
+}
+
+.price-container .price-two {
+  text-decoration: line-through;
+  color: var(--dark-gray-blue);
+  opacity: .8;
+}
+
+.intro .btn {
+  /* background-color: aqua; */
+}
+
+.btn button {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--primary-clay);
+  color: var(--white);
+  font-size: 1rem;
+}
+
+
+
+footer {
+  text-align: center;
+}

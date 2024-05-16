@@ -9,6 +9,7 @@
   /* Colors -----START-----*/
   /* Primary */
   --primary-clay: hsl(158, 36%, 37%);
+  --primary-hover: hsl(158, 80%, 15%);
   --primary-cream: hsl(30, 38%, 92%);
   /* Neutral */
   --dark-blue: hsl(212, 21%, 14%);
@@ -44,7 +45,6 @@ main.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* max-width: 360px; Maximum width for mobile devices */
   width: 100%; /* This will ensure it takes full width available */
 }
 
@@ -58,7 +58,7 @@ main.container {
   /* gap: 20px; */
   border-radius: 15px;
 }
-.container .img-container {
+.wrapper .img-container {
   width: 100%;
   /* padding-top: 70%; */
   height: 250px;
@@ -139,10 +139,40 @@ main.container {
   background-color: var(--primary-clay);
   color: var(--white);
   font-size: 1rem;
+  cursor: pointer;
 }
 
-
+.btn button:hover {
+  
+  background-color: var(--primary-hover);
+}
 
 footer {
   text-align: center;
+}
+
+@media screen and (min-width: 740px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper{
+    flex-direction: row;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .wrapper .img-container {
+    width: 50%;
+    height: auto;
+    background-image: url("../images/image-product-desktop.jpg");
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+  }
+
+  .wrapper .intro {
+    width: 50%;
+    padding: 30px;
+  }
 }
